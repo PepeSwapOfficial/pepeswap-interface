@@ -54,14 +54,14 @@ export function StakingPage() {
         {/* <Tux src={TuxImg} /> */}
         <Heading>
           {/* <PotionIcon width={60} height={60} /> */}
-          <TYPE.largeHeader style={{ margin: 0 }}>Earn rewards by staking LEET for xLEET</TYPE.largeHeader>
+          <TYPE.largeHeader style={{ margin: 0 }}>Earn rewards by staking CROAK for xCROAK</TYPE.largeHeader>
         </Heading>
         <AutoColumn gap="lg" justify="center">
           <InfoCard
             title="Staking rewards"
-            description={`The sell tax on our token is distributed as LEET proportional to your share of the staking pool. When your LEET is staked you receive xLEET.
+            description={`The sell tax on our token is distributed as CROAK proportional to your share of the staking pool. When your CROAK is staked you receive xCROAK.
 
-          ${`\n`} Your xLEET is continuously compounding, when you unstake you will receive all the originally deposited LEET plus any additional tokens accrued from fees.
+          ${`\n`} Your xCROAK is continuously compounding, when you unstake you will receive all the originally deposited CROAK plus any additional tokens accrued from fees.
 
           ${`\n`} NOTE: The APR shown is based on the fees generated in the last 24 hours and may vary over time.`}
           />

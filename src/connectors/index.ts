@@ -66,6 +66,6 @@ export const portis = new PortisConnector({
 // // mainnet only
 export const walletlink = new WalletLinkConnector({
   url: NETWORK_URLS[ChainId.MAINNET],
-  appName: 'LeetSwap Finance',
+  appName: 'PepeSwap',
   appLogoUrl: DIFFUSION_LOGO_URL,
 })

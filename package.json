@@ -1,6 +1,6 @@
 {
-  "name": "@leetswap/interface",
-  "description": "LeetSwap Interface",
+  "name": "@pepeswap/interface",
+  "description": "PepeSwap Interface",
   "homepage": ".",
   "private": true,
   "devDependencies": {

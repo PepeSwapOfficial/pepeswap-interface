@@ -45,25 +45,25 @@ export function DisclaimerModal() {
               `}
             >
               <p>
-                LeetSwap Finance is a decentralized peer-to-peer protocol that people can use to create liquidity and
-                trade ERC-20 tokens on Eth. This website is a public and free interface to help users interact with the
-                decentralized DEX smart contracts that are deployed on the Eth Blockchain. Your use of the
-                LeetSwap protocol involves various risks, including, but not limited to, losses while digital assets
-                are being supplied to the LeetSwap protocol and losses due to the fluctuation of prices of tokens in a
-                trading pair or liquidity pool. Before using the LeetSwap protocol, you should review the relevant
-                documentation to make sure you understand how the LeetSwap protocol works. Additionally, just as you
+                PepeSwap is a decentralized peer-to-peer protocol that people can use to create liquidity and
+                trade ERC-20 tokens on PepeChain. This website is a public and free interface to help users interact with the
+                decentralized DEX smart contracts that are deployed on the PepeChain Blockchain. Your use of the
+                PepeSwap protocol involves various risks, including, but not limited to, losses while digital assets
+                are being supplied to the PepeSwap protocol and losses due to the fluctuation of prices of tokens in a
+                trading pair or liquidity pool. Before using the PepeSwap protocol, you should review the relevant
+                documentation to make sure you understand how the PepeSwap protocol works. Additionally, just as you
                 can access email protocols such as SMTP through multiple email clients, you can access the
-                LeetSwap protocol through dozens of web or mobile interfaces. You are responsible for doing your own
+                PepeSwap protocol through dozens of web or mobile interfaces. You are responsible for doing your own
                 diligence on those interfaces to understand the fees and risks they present.
               </p>
               <p>
-                THE LeetSwap PROTOCOL IS PROVIDED &quot;AS IS&quot;, AT YOUR OWN RISK, AND WITHOUT WARRANTIES OF ANY
-                KIND. The LeetSwap protocol is not owned by anyone, it is run by smart contracts deployed on the Eth
-                blockchain. No developer or entity involved in creating the LeetSwap protocol will be liable for any
+                THE PepeSwap PROTOCOL IS PROVIDED &quot;AS IS&quot;, AT YOUR OWN RISK, AND WITHOUT WARRANTIES OF ANY
+                KIND. The PepeSwap protocol is not owned by anyone, it is run by smart contracts deployed on the PepeChain
+                blockchain. No developer or entity involved in creating the PepeSwap protocol will be liable for any
                 claims or damages whatsoever associated with your use, inability to use, or your interaction with other
-                users of, the LeetSwap protocol, including any direct, indirect, incidental, special, exemplary,
+                users of, the PepeSwap protocol, including any direct, indirect, incidental, special, exemplary,
                 punitive or consequential damages, or loss of profits, cryptocurrencies, tokens, or anything else of
-                value. The LeetSwap protocol is not a financial product and should not be treated as such. Furthermore,
+                value. The PepeSwap protocol is not a financial product and should not be treated as such. Furthermore,
                 the smart contracts, although tested before deployment, are not audited and therefore may contain bugs.
               </p>
             </div>

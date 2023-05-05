@@ -141,7 +141,7 @@ export function MobileMenu() {
           <StyledNavLink id={`stake-nav-link`} to={'/stake'}>
             {t('Stake')}
           </StyledNavLink>
-          <BridgeMenu />
+          {/* <BridgeMenu /> */}
         </Menu>
       )}
     </div>

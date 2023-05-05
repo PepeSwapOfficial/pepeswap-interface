@@ -66,7 +66,7 @@ export const AssetsListPage = () => {
     }
   }, 0)
 
-  // Staked Assets (xLEET)
+  // Staked Assets (xCROAK)
   const xToken = chainId ? XDIFFUSION[chainId] : undefined
   const [xdiffBalance, xdiffBalanceLoading] = useTokenBalancesWithLoadingIndicator(account ?? undefined, [xToken])
   const earnedDiff = useEarnedDiff(Object.values(xdiffBalance)[0])
@@ -139,7 +139,7 @@ export const AssetsListPage = () => {
       [ethBalance, ...Object.values(tokenBalances)]
         .filter(isTruthy)
         .filter((a) => a && a.greaterThan(0))
-        // remove XLEET
+        // remove XCROAK
         .filter((a) => {
           if (!chainId) {
             return true
@@ -160,7 +160,7 @@ export const AssetsListPage = () => {
         {/*<Tux />*/}
         <HeadingWithPotion
           heading="My Assets"
-          description="Overview of your tokens, liquidity, farms, and staking positions on LeetSwap."
+          description="Overview of your tokens, liquidity, farms, and staking positions on PepeSwap."
         />
         <TotalAssets
           stakedBalance={parseFloat(xdiffValue?.toSignificant(4) ?? '0')}

@@ -4,14 +4,14 @@ const { METH, MUSDC, MATOM } = CONTRACTS
 describe('Remove Liquidity', () => {
   it('Native remove', () => {
     cy.visit(`/remove/v2/ETH/${MUSDC}`)
-    cy.get('#remove-liquidity-tokena-symbol').should('contain.text', 'ETH')
+    cy.get('#remove-liquidity-tokena-symbol').should('contain.text', 'PC')
     cy.get('#remove-liquidity-tokenb-symbol').should('contain.text', 'MUSDC')
   })
 
   it('Native remove swap order', () => {
     cy.visit(`/remove/v2/${MUSDC}/ETH`)
     cy.get('#remove-liquidity-tokena-symbol').should('contain.text', 'MUSDC')
-    cy.get('#remove-liquidity-tokenb-symbol').should('contain.text', 'ETH')
+    cy.get('#remove-liquidity-tokenb-symbol').should('contain.text', 'PC')
   })
 
   it('loads the two correct tokens', () => {
@@ -28,8 +28,8 @@ describe('Remove Liquidity', () => {
 
   it('does not crash if ETH is duplicated', () => {
     cy.visit(`/remove/v2/ETH/ETH`)
-    cy.get('#remove-liquidity-tokena-symbol').should('contain.text', 'ETH')
-    cy.get('#remove-liquidity-tokenb-symbol').should('contain.text', 'ETH')
+    cy.get('#remove-liquidity-tokena-symbol').should('contain.text', 'PC')
+    cy.get('#remove-liquidity-tokenb-symbol').should('contain.text', 'PC')
   })
 
   it.skip('token not in storage is loaded', () => {

@@ -6,10 +6,10 @@ import { NEVER_RELOAD, useMultipleContractSingleData } from '../multicall/hooks'
 import { tryParseAmount } from '../swap/hooks'
 import { wrappedCurrency } from '../../utils/wrappedCurrency'
 import { Interface } from '@ethersproject/abi'
-import LEETSWAP_PAIR_ABI from '../../abis/leetswap-pair.json'
+import PEPESWAP_PAIR_ABI from '../../abis/leetswap-pair.json'
 import { BigNumber } from '@ethersproject/bignumber'
 
-export const LEETSWAP_PAIR_INTERFACE = new Interface(LEETSWAP_PAIR_ABI)
+export const PEPESWAP_PAIR_INTERFACE = new Interface(PEPESWAP_PAIR_ABI)
 
 export interface LPFeesInfo {
   // the address of the pair
@@ -45,8 +45,8 @@ export function useLPFeesInfo(currencies: [Currency | undefined, Currency | unde
     [tokens]
   )
 
-  const feesAddresses = useMultipleContractSingleData(pairAddresses, LEETSWAP_PAIR_INTERFACE, 'fees', undefined)
-  const claimableFees = useMultipleContractSingleData(pairAddresses, LEETSWAP_PAIR_INTERFACE, 'claimableFeesFor', [account ?? undefined])
+  const feesAddresses = useMultipleContractSingleData(pairAddresses, PEPESWAP_PAIR_INTERFACE, 'fees', undefined)
+  const claimableFees = useMultipleContractSingleData(pairAddresses, PEPESWAP_PAIR_INTERFACE, 'claimableFeesFor', [account ?? undefined])
 
   return useMemo(() => {
       if (!account || !chainId) return Array(currencies.length).fill(null)

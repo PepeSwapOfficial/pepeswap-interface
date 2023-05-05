@@ -72,7 +72,7 @@ export function BridgeMenu() {
         <Menu ref={setPopperElement as any} style={styles.popper} {...attributes.popper}>
           <MenuItem href="https://bridge.zkevm-rpc.com">
             <div>
-              Polygon zkEVM <span style={{ fontSize: '11px', textDecoration: 'none !important' }}>↗</span>
+              PepeChain <span style={{ fontSize: '11px', textDecoration: 'none !important' }}>↗</span>
             </div>
           </MenuItem>
           <MenuItem href="https://app.multichain.org/#/router">

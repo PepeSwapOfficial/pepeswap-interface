@@ -8,7 +8,7 @@ import styled, {
 } from 'styled-components'
 import { useIsDarkMode } from '../state/user/hooks'
 import { Colors } from './styled'
-import BackgroundImg from '../assets/images/background.webp'
+import BackgroundImg from '../assets/images/background.png'
 
 export * from './components'
 

@@ -46,7 +46,7 @@ export default function useWrapCallback(
             ? async () => {
                 try {
                   const txReceipt = await wethContract.deposit({ value: `0x${inputAmount.quotient.toString(16)}` })
-                  addTransaction(txReceipt, { summary: `Wrap ${inputAmount.toSignificant(6)} ETH to WETH` })
+                  addTransaction(txReceipt, { summary: `Wrap ${inputAmount.toSignificant(6)} PC to WPC` })
                 } catch (error) {
                   console.error('Could not deposit', error)
                 }
@@ -55,8 +55,8 @@ export default function useWrapCallback(
         inputError: sufficientBalance
           ? undefined
           : hasInputAmount
-          ? 'Insufficient ETH balance'
-          : 'Enter ETH amount',
+          ? 'Insufficient PC balance'
+          : 'Enter PC amount',
       }
     } else if (currencyEquals(WETH[chainId], inputCurrency) && outputCurrency.isNative) {
       return {
@@ -66,7 +66,7 @@ export default function useWrapCallback(
             ? async () => {
                 try {
                   const txReceipt = await wethContract.withdraw(`0x${inputAmount.quotient.toString(16)}`)
-                  addTransaction(txReceipt, { summary: `Unwrap ${inputAmount.toSignificant(6)} wETH to ETH` })
+                  addTransaction(txReceipt, { summary: `Unwrap ${inputAmount.toSignificant(6)} wPC to PC` })
                 } catch (error) {
                   console.error('Could not withdraw', error)
                 }
@@ -75,8 +75,8 @@ export default function useWrapCallback(
         inputError: sufficientBalance
           ? undefined
           : hasInputAmount
-          ? 'Insufficient wETH balance'
-          : 'Enter wETH amount',
+          ? 'Insufficient wPC balance'
+          : 'Enter wPC amount',
       }
     } else {
       return NOT_APPLICABLE

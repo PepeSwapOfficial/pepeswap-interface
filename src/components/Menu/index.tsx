@@ -143,19 +143,19 @@ export default function Menu() {
 
       {open && (
         <MenuFlyout>
-          <MenuItem href="https://leetswap.finance/">
+          <MenuItem href="https://pepeswap.lol/">
             <Info size={14} />
             <div>About</div>
           </MenuItem>
-          <MenuItem href="https://twitter.com/LeetSwap">
+          <MenuItem href="https://twitter.com/PepeSwap_">
             <MessageCircle size={14} />
             <div>Twitter</div>
           </MenuItem>
-          <MenuItem href="https://discord.gg/me5UbZNxPB">
+          <MenuItem href="https://discord.gg/PepeSwap">
             <MessageCircle size={14} />
             <div>Discord</div>
           </MenuItem>
-          <MenuItem href="https://t.me/LeetSwap">
+          <MenuItem href="https://t.me/PepeSwapOfficial">
             <MessageCircle size={14} />
             <div>Telegram</div>
           </MenuItem>

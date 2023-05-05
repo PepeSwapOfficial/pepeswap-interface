@@ -246,7 +246,7 @@ export function FarmTableRow({
   const currency1 = pair?.token1 ? unwrappedToken(pair.token1) : undefined
   const totalDepositsText = tvl
     ? `$${tvl.toFixed(0, { groupSeparator: ',' })}`
-    : `${totalLPStaked?.toSignificant(4, { groupSeparator: ',' }) ?? '-'} LEET-LP`
+    : `${totalLPStaked?.toSignificant(4, { groupSeparator: ',' }) ?? '-'} CROAK-LP`
   const yourDepositText = positionValue?.greaterThan(0) ? `$${positionValue.toFixed(0, { groupSeparator: ',' })}` : '-'
   const totalAPRText = totalAPR && JSBI.GT(totalAPR, JSBI.BigInt(0)) ? `${totalAPR.toString()}%` : '-'
   const PoolName = currency0 && currency1 ? `${currency0?.symbol}/${currency1?.symbol}` : '-'

@@ -1,6 +1,6 @@
 // used to mark unsupported tokens, these are hosted lists of unsupported tokens
 
-const LEETSWAP_LIST = 'https://raw.githubusercontent.com/LeetSwap/tokenlist/master/src/tokenlist.json'
+const PEPESWAP_LIST = 'https://raw.githubusercontent.com/PepeSwapOfficial/tokenlist/master/src/tokenlist.json'
 // const COMPOUND_LIST = 'https://raw.githubusercontent.com/compound-finance/token-list/master/compound.tokenlist.json'
 // const UMA_LIST = 'https://umaproject.org/uma.tokenlist.json'
 // const AAVE_LIST = 'tokenlist.aave.eth'
@@ -21,9 +21,9 @@ export const UNSUPPORTED_LIST_URLS: string[] = []
 
 // lower index == higher priority for token import
 export const DEFAULT_LIST_OF_LISTS: string[] = [
-  LEETSWAP_LIST,
+  PEPESWAP_LIST,
   ...UNSUPPORTED_LIST_URLS, // need to load unsupported tokens as well
 ]
 
 // default lists to be 'active' aka searched across
-export const DEFAULT_ACTIVE_LIST_URLS: string[] = [LEETSWAP_LIST]
+export const DEFAULT_ACTIVE_LIST_URLS: string[] = [PEPESWAP_LIST]

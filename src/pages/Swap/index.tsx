@@ -358,7 +358,7 @@ export default function Swap({ history }: RouteComponentProps) {
         onDismiss={handleDismissTokenWarning}
       />
 
-      <Tux src={TuxImg} />
+      {/* <Tux src={TuxImg} /> */}
       <AppBody>
         {false && <NomadWarningBanner />}
         <SwapHeader allowedSlippage={allowedSlippage} />
@@ -499,7 +499,7 @@ export default function Swap({ history }: RouteComponentProps) {
                           {/* we need to shorten this string on mobile */}
                           {approvalState === ApprovalState.APPROVED || signatureState === UseERC20PermitState.SIGNED
                             ? 'You can now trade ' + currencies[Field.INPUT]?.symbol
-                            : 'Allow the LeetSwap Protocol to use your ' + currencies[Field.INPUT]?.symbol}
+                            : 'Allow the PepeSwap Protocol to use your ' + currencies[Field.INPUT]?.symbol}
                         </span>
                         {approvalState === ApprovalState.PENDING ? (
                           <Loader stroke="white" />
@@ -509,7 +509,7 @@ export default function Swap({ history }: RouteComponentProps) {
                         ) : (
                           <MouseoverTooltip
                             text={
-                              'You must give the LeetSwap smart contracts permission to use your ' +
+                              'You must give the PepeSwap smart contracts permission to use your ' +
                               currencies[Field.INPUT]?.symbol +
                               '. You only have to do this once per token.'
                             }

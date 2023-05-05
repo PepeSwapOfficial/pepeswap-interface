@@ -63,7 +63,7 @@ import {
 } from '../abis/types'
 
 import { useActiveWeb3React } from './web3'
-import { LEETSWAP_PAIR_INTERFACE } from 'state/fees/hooks'
+import { PEPESWAP_PAIR_INTERFACE } from 'state/fees/hooks'
 
 // returns null on errors
 export function useContract<T extends Contract = Contract>(
@@ -124,7 +124,7 @@ export function useEIP2612Contract(tokenAddress?: string): Contract | null {
 }
 
 export function usePairContract(pairAddress?: string, withSignerIfPossible?: boolean): Contract | null {
-  return useContract(pairAddress, LEETSWAP_PAIR_INTERFACE, withSignerIfPossible)
+  return useContract(pairAddress, PEPESWAP_PAIR_INTERFACE, withSignerIfPossible)
 }
 
 export function useV2RouterContract(): Contract | null {

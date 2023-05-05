@@ -199,16 +199,16 @@ export default function WalletModal({
                     params: [
                       {
                         chainId: '0x44d',
-                        chainName: 'ETH',
+                        chainName: 'PC',
                         nativeCurrency: {
-                          name: 'ETH',
-                          symbol: 'ETH',
+                          name: 'PC',
+                          symbol: 'PC',
                           decimals: 18,
                         },
                         rpcUrls: [
-                          'https://zkevm-rpc.com',
+                          'https://testnet-rpc01.pepechaintech.com',
                         ],
-                        blockExplorerUrls: ['https://zkevm.polygonscan.com'],
+                        blockExplorerUrls: ['https://testnet-explorer.pepechaintech.com'],
                       },
                     ],
                   })

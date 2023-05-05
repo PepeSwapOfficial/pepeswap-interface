@@ -23,11 +23,11 @@ import Web3Status from '../Web3Status'
 // import Modal from '../Modal'
 // import UniBalanceContent from './UniBalanceContent'
 import { ChainId } from 'constants/chains'
-import LeetSwapLogo from '../../assets/svg/logo.svg'
+import PepeSwapLogo from '../../assets/svg/logo.svg'
 // import { ExternalLink } from 'theme/components'
 
 const Logo = styled.img`
-  height: 17px;
+  height: 50px;
 `
 
 const HeaderFrame = styled.div<{ showBackground: boolean }>`
@@ -285,8 +285,8 @@ export const StyledMenuButton = styled.button`
 `
 
 const NETWORK_LABELS: Record<ChainId, string> = {
-  [ChainId.TESTNET]: 'Polygon zkEVM Testnet',
-  [ChainId.MAINNET]: 'Polygon zkEVM',
+  [ChainId.TESTNET]: 'PepeChain Testnet',
+  [ChainId.MAINNET]: 'PepeChain',
 }
 
 export default function Header() {
@@ -308,7 +308,7 @@ export default function Header() {
       </Modal> */}
       <HeaderRow>
         <Title href=".">
-          <Logo src={LeetSwapLogo} />
+          <Logo src={PepeSwapLogo} />
         </Title>
       </HeaderRow>
       <HideSmall>
@@ -350,7 +350,7 @@ export default function Header() {
           >
             {t('My Assets')}
           </StyledNavLink>
-          <BridgeMenu />
+          {/* <BridgeMenu /> */}
         </HeaderLinks>
       </HideSmall>
       <HeaderControls>
@@ -363,7 +363,7 @@ export default function Header() {
           <AccountElement active={!!account} style={{ pointerEvents: 'auto' }}>
             {account && userEthBalance ? (
               <BalanceText style={{ flexShrink: 0 }} pl="0.75rem" pr="0.5rem" fontWeight={500}>
-                {userEthBalance?.toSignificant(4)} <span style={{ color: '#22c55e' }}>ETH</span>
+                {userEthBalance?.toSignificant(4)} <span style={{ color: '#22c55e' }}>PC</span>
               </BalanceText>
             ) : null}
             <Web3Status />

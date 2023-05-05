@@ -117,7 +117,7 @@ export function StakingBalance() {
                 <TokenLogo>
                   <DoubleCurrencyLogo currency0={xToken} currency1={token} size={16} />
                   <TYPE.body fontSize={16} fontWeight={500} margin={'10px'}>
-                    LEET / xLEET Ratio:{' '}
+                    CROAK / xCROAK Ratio:{' '}
                     <span style={{ color: '#eab308', fontSize: '14px', paddingLeft: '7px' }}>
                       {ratio ? (
                         <CountUp
@@ -134,7 +134,7 @@ export function StakingBalance() {
                       )}
                     </span>
                   </TYPE.body>
-                  <QuestionHelper text={`Unstaking 1 xLEET will earn ${ratio?.toSignificant()} LEET`} />
+                  <QuestionHelper text={`Unstaking 1 xCROAK will earn ${ratio?.toSignificant()} CROAK`} />
                 </TokenLogo>
               </TYPE.largeHeader>
             </AutoColumn>
@@ -145,7 +145,7 @@ export function StakingBalance() {
               <TokenLogo>
                 <CurrencyLogoFromList currency={token ?? undefined} size={'24px'} />
                 <TYPE.body fontSize={20} fontWeight={500} margin={'10px'}>
-                  LEET
+                  CROAK
                 </TYPE.body>
               </TokenLogo>
             </AutoColumn>
@@ -189,7 +189,7 @@ export function StakingBalance() {
               <TokenLogo>
                 <CurrencyLogoFromList currency={xToken ?? undefined} size={'24px'} />
                 <TYPE.body fontSize={20} fontWeight={500} margin={'10px'}>
-                  xLEET
+                  xCROAK
                 </TYPE.body>
               </TokenLogo>
             </AutoColumn>
@@ -234,12 +234,12 @@ export function StakingBalance() {
               <TokenLogo>
                 <CurrencyLogoFromList currency={token ?? undefined} size={'24px'} />
                 <TYPE.body fontSize={20} fontWeight={500} margin={'10px'}>
-                  Staked LEET
+                  Staked CROAK
                 </TYPE.body>
                 <QuestionHelper
                   text={`${earnedDiff?.toFixed(
                     2
-                  )} LEET is available upon unstaking ${xdiffBalance?.toSignificant()} xLEET.`}
+                  )} CROAK is available upon unstaking ${xdiffBalance?.toSignificant()} xCROAK.`}
                 />
               </TokenLogo>
             </AutoColumn>

@@ -79,7 +79,7 @@ const StakedAssetsTable = () => {
             <TokenLogo>
               <CurrencyLogoFromList currency={xToken ?? undefined} size={'24px'} />
               <TYPE.body fontSize={20} fontWeight={500} margin={'10px'}>
-                xLEET
+                xCROAK
               </TYPE.body>
               {/* {!!assetHelper && <QuestionHelper text={assetHelper} />} */}
             </TokenLogo>
@@ -99,12 +99,12 @@ const StakedAssetsTable = () => {
             <TokenLogo>
               <CurrencyLogoFromList currency={token ?? undefined} size={'24px'} />
               <TYPE.body fontSize={20} fontWeight={500} margin={'10px'}>
-                Staked LEET
+                Staked CROAK
               </TYPE.body>
               <QuestionHelper
                 text={`${earnedDiff?.toFixed(
                   2
-                )} LEET is available upon unstaking ${xdiffBalance?.toSignificant()} xLEET.`}
+                )} CROAK is available upon unstaking ${xdiffBalance?.toSignificant()} xCROAK.`}
               />
             </TokenLogo>
             <TokenAndUSDCBalance style={{ marginLeft: 12 }}>

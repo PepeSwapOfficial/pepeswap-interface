@@ -5,14 +5,14 @@ import invariant from 'tiny-invariant'
 import { WETH9_ADDRESS } from './addresses'
 
 export const WETH = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, WETH9_ADDRESS[ChainId.MAINNET], 18, 'wETH', 'Wrapped Eth'),
-  [ChainId.TESTNET]: new Token(ChainId.TESTNET, WETH9_ADDRESS[ChainId.TESTNET], 18, 'wETH', 'Wrapped Eth'),
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, WETH9_ADDRESS[ChainId.MAINNET], 18, 'wPC', 'Wrapped PepeChain'),
+  [ChainId.TESTNET]: new Token(ChainId.TESTNET, WETH9_ADDRESS[ChainId.TESTNET], 18, 'wPC', 'Wrapped PepeChain'),
 }
 export const WETH9 = WETH
 
 export class Eth extends NativeCurrency {
   protected constructor(chainId: number) {
-    super(chainId, 18, 'ETH', 'Eth')
+    super(chainId, 18, 'PC', 'PepeChain')
   }
 
   public get wrapped(): Token {

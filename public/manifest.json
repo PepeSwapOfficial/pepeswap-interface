@@ -1,7 +1,7 @@
 {
   "background_color": "#000",
   "display": "standalone",
-  "homepage_url": "https://app.leetswap.finance",
+  "homepage_url": "https://app.pepeswap.lol",
   "icons": [
     {
       "src": "./images/192x192_App_Icon.png",
@@ -17,8 +17,8 @@
     }
   ],
   "orientation": "portrait",
-  "name": "LeetSwap Finance",
-  "short_name": "LeetSwap",
+  "name": "PepeSwap",
+  "short_name": "PepeSwap",
   "start_url": ".",
   "theme_color": "#66ff66"
 }
